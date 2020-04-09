@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pizza Shop</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>Pizza Delivery</h1>
+    <ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="About me.html">About us</a></li>
+   <li><a href="Menu.html">Menu</a></li>  
+  </ul>
+     <h3>Menu</h3>
+    <p> Create your own Italain crust Pizza from the toppings below to make your very own Perfect Pizza! Your chosen order will appear above.</p>
+    <div id="cart"></div>
+    <section id="menu">
+        <div id="contentHeading">
+            <h3>Please pick your choice of Pizza</h3>
+        </div>
+        <div class="grid-container"> <!--Formats into a CSS grid-->
+        
+            <div>
+                <img class src="https://cdn.shopify.com/s/files/1/1163/3506/products/24-hour-cheese-pizza-delivery.jpeg?v=1475846819">
+                <h3>Four Cheese Pizza -(Medium) £9.50</h3>
+                <p>How many would you like?</p>
+               <label for="item2quantity"></label><input type="number" id="item2quantity" > <!-- Input box for the user to enter the quantity of pizza-->
+                <button type="button" onclick="addCheese()">Add to my order</button> <!-- button to add to the order-->
+            </div>
+            <div>
+                <img class src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQa3jqTuf43YoiVeOo1UiyaFJeU8lKxKWi7dLxTJyT6CfejAj6f">
+                <h3>Pepperoni Pizza -(Medium) £13.00</h3>
+                <p>How many would you like?</p>
+               <label for="item3quantity"></label><input type="number" id="item3quantity" > <!-- Input box for the user to enter the quantity of pizza-->
+                <button type="button" onclick="addPepperoni()">Add to my order</button>  <!-- button to add to the order--> 
+            </div> 
+
+            <div>
+                <img class src="https://www.fishisthedish.co.uk/assets/images/recipes/_headerImages/BENS-FISH-PIZZA.jpg" width="300" height="350">
+                <h3>Fish Catch Pizza (Medium) - £12.50</h3>
+                <p>How many would you like?</p>
+                <label for="item4quantity"></label><input type="number" id="item4quantity" ><!-- Input box for the user to enter the quantity of pizza-->
+                <button type="button" onclick="addFishcatch()">Add to my order</button> <!-- button to add to the order-->
+            </div>
+          
+          <div>
+                <img class src="https://cdn.glitch.com/2ba4491d-82f0-461b-9869-b1b2ac74f315%2FItalian-pizza1.jpg?v=1582746274063">
+                <h3>Vegeterian Pizza (Medium) - £11.50</h3>
+                <p>How many would you like?</p>
+                <label for="item5quantity"></label><input type="number" id="item5quantity" ><!-- Input box for the user to enter the quantity of pizza-->
+                <button type="button" onclick="addvegeterian()">Add to my order</button> <!-- button to add to the order-->
+            </div>
+          
+        </div>
+
+        <div class="menuExtrasHeading">
+            <h3>Would you like any Extras?</h3>
+        </div>
+
+        <div class="grid-container">
+                <div>
+                    <img class src="https://tse2.mm.bing.net/th?id=OIP.MZ8ZVFnECXNS2pK-QDD9UwHaLH&pid=Api&P=0&w=300&h=300"> <!--IMAGE LINK-->
+                    <h3>Caesar Salad £4.95 </h3>
+                    <p>How many would you like?</p>
+                    <label for="extraitem1quantity"></label><input type="number" id="extraitem1quantity"> <!-- Input box for the user to enter the quantity of extras-->
+                    <button type="button" onclick="addCaesarSalad()">Add to my order</button>  <!-- button to add to the order-->
+                </div>
+                <div>
+                    <img class src="https://prendergastbutchers.co.uk/wp-content/uploads/2018/05/41147_P.jpg">
+                    <h3> Rustic Chips- £3.95</h3>
+                    <p>How many would you like?</p>
+                    <label for="extraitem2quantity"></label><input type="number" id="extraitem2quantity"><!-- Input box for the user to enter the quantity of extras-->
+                    <button type="button" onclick="addRusticChips()">Add to my order</button>  <!-- button to add to the order-->
+                </div>
+                <div>
+                    <img class src="https://tse4.mm.bing.net/th?id=OIP.K4aBqf8vy09OOwFhVs5LQgHaLZ&pid=Api&P=0&w=300&h=300">
+                    <h3> Wild garlic bread- £3.75</h3>
+                    <p>How many would you like?</p>
+                    <label for="extraitem3quantity"></label><input type="number" id="extraitem3quantity"><!-- Input box for the user to enter the quantity of extras-->
+                    <button type="button" onclick="addWildgarlicbread()">Add to my order</button>  <!-- button to add to the order-->
+                </div>
+             
+             
+                
+            </div>
+
+         <div>
+              
+                  
+           
+      
+      
+      
+      </div>
+    </section>
+
+    
+    
+  
+  </body>
+</html>
